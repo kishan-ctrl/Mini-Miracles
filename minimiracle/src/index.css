@@ -1,0 +1,13 @@
+@import "tailwindcss";
+.ring-donut {
+  border-radius: 9999px;
+  background: conic-gradient(
+    #8bc34a 0deg 90deg,
+    #2196f3 90deg 180deg,
+    #e91e63 180deg 270deg,
+    #ff9800 270deg 360deg
+  );
+  -webkit-mask: radial-gradient(circle, transparent 0 42%, #000 43%);
+  mask: radial-gradient(circle, transparent 0 42%, #000 43%);
+  opacity: 0.9;
+}
