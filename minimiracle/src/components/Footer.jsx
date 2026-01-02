@@ -7,7 +7,7 @@ import { socialLinks } from "../mock/mockdata";
 const Footer = () => {
   return (
     <footer className="relative bg-purple-900 text-white mt-20 pt-12 pb-6 overflow-hidden">
-      {/* --- DECORATIVE FLOATING ICONS (ANIMATED) --- */}
+     
       <div className="hidden sm:block absolute top-10 right-10 text-yellow-400 text-4xl animate-bounce delay-700 opacity-50">
         ⭐
       </div>
