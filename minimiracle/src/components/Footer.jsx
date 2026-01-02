@@ -14,10 +14,7 @@ const Footer = () => {
       <div className="hidden sm:block absolute bottom-20 left-10 text-pink-400 text-5xl animate-pulse opacity-30">
         🎈
       </div>
-      {/* <div className="hidden sm:block absolute top-40 left-1/4 text-green-400 text-3xl animate-spin opacity-40">
-        ❄️
-      </div> */}
-
+     
       <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-8 md:mb-12">
           {/* COLUMN 1: BRANDING */}
