@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* BOTTOM COPYRIGHT */}
+    
         <div className="border-t border-purple-800 pt-6 md:pt-8 mt-6 md:mt-8 text-center text-purple-300 text-xs sm:text-sm">
           <p>
             © {new Date().getFullYear()} Mini Miracle Pre-School. All Rights
