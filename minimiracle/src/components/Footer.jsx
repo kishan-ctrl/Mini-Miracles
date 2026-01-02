@@ -32,7 +32,7 @@ const Footer = () => {
               We provide a nurturing environment where children can explore,
               learn, and grow. Every child is a mini miracle waiting to shine!
             </p>
-            {/* Social Icons */}
+         
             <div className="flex gap-4 mt-4">
               {socialLinks.map(({ name, icon: Icon, url }) => (
                 <a
