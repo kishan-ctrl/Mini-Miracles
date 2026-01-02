@@ -35,3 +35,51 @@
 .read-the-docs {
   color: #888;
 }
+/* WhatsApp Button Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes infinitePulseGlow {
+  0% {
+    box-shadow: 
+      0 0 0 0 rgba(72, 187, 120, 0.7),
+      0 0 0 0 rgba(72, 187, 120, 0.4),
+      0 0 20px rgba(72, 187, 120, 0.3);
+  }
+  70% {
+    box-shadow: 
+      0 0 0 15px rgba(72, 187, 120, 0),
+      0 0 0 10px rgba(72, 187, 120, 0),
+      0 0 25px rgba(72, 187, 120, 0.6);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 0 rgba(72, 187, 120, 0),
+      0 0 0 0 rgba(72, 187, 120, 0),
+      0 0 20px rgba(72, 187, 120, 0.3);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.infinite-pulse-glow {
+  animation: infinitePulseGlow 2s infinite;
+}
+
+/* Make the glow more subtle on mobile */
+@media (max-width: 640px) {
+  .infinite-pulse-glow {
+    animation: infinitePulseGlow 2.5s infinite;
+    box-shadow: 0 0 15px rgba(72, 187, 120, 0.4) !important;
+  }
+}

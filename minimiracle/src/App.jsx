@@ -5,6 +5,7 @@ import PhotoGallery from "./pages/PhotoGallery";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
 import Staff from "./pages/Staff";
+import WhatsAppButton from "./components/whatsappButton";
 import "./App.css";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Route path="/staff" element={<Staff />} />
         </Routes>
       </main>
-
+      <WhatsAppButton />
       {/* Always visible */}
       <Footer />
     </div>
