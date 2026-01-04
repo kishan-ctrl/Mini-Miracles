@@ -58,7 +58,7 @@ const Home = () => {
                   type="button"
                   className="rounded-full bg-teal-400 text-slate-900 font-bold px-6 py-3
                              hover:bg-teal-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-purple-700
-                             transition"
+                             hover:cursor-pointer transition"
                   aria-label="Enroll now"
                 >
                   {pageContent.hero.ctaPrimary}
@@ -68,7 +68,7 @@ const Home = () => {
                   type="button"
                   className="rounded-full bg-white/15 border border-white/25 px-6 py-3 font-semibold
                              hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-purple-700
-                             transition"
+                             hover:cursor-pointer transition"
                   aria-label="View admission details"
                 >
                   View Details
@@ -162,7 +162,7 @@ const Home = () => {
                 onClick={() => handleViewAll("courses")}
                 className="rounded-full bg-white text-indigo-700 font-bold px-5 py-2
                            hover:bg-indigo-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-700
-                           transition"
+                           hover:cursor-pointer transition"
                 aria-label="View all courses"
               >
                 View All
@@ -224,7 +224,7 @@ const Home = () => {
               onClick={() => handleViewAll("activities")}
               className="rounded-full bg-indigo-600 text-white font-bold px-6 py-3
                          hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
-                         transition"
+                         hover:cursor-pointer transition"
               aria-label="View all activities"
             >
               {pageContent.activities.viewAll}
@@ -258,7 +258,7 @@ const Home = () => {
               type="button"
               className="rounded-full bg-slate-900 text-white font-bold px-7 py-3
                          hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2
-                         transition"
+                         hover:cursor-pointer transition"
               aria-label="Enroll now from CTA section"
             >
               {pageContent.cta.button}
