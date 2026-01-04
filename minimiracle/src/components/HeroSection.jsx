@@ -37,7 +37,7 @@ export default function HeroSection({ children }) {
 
           <button
             type="button"
-            className="relative mt-7 inline-flex items-center justify-center rounded-md bg-teal-600 px-7 py-3 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(0,0,0,0.18)] hover:bg-teal-500 transition"
+            className="relative mt-7 inline-flex items-center justify-center rounded-md bg-teal-600 px-7 py-3 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(0,0,0,0.18)] hover:bg-teal-500 hover:cursor-pointer transition"
           >
             Enroll Now
           </button>

@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ActivityCard = React.memo(function ActivityCard({ title, imgId , img , imgAlt }) {
+const ActivityCard = React.memo(function ActivityCard({ title, imgId, img, imgAlt }) {
   return (
     <article
-      className="group rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden
+      className="group rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-sm overflow-hidden
                  hover:-translate-y-1 hover:shadow-md transition-transform"
       aria-label={`Activity: ${title}`}
     >
-      {/* 300x200 placeholder */}
       <div className="w-full aspect-[3/2] bg-slate-100 overflow-hidden">
         {img ? (
           <img
@@ -29,8 +28,8 @@ const ActivityCard = React.memo(function ActivityCard({ title, imgId , img , img
         )}
       </div>
 
-      <div className="p-4">
-        <h3 className="font-bold text-slate-900">{title}</h3>
+      <div className="p-3 sm:p-4">
+        <h3 className="font-bold text-slate-900 text-sm sm:text-base">{title}</h3>
       </div>
     </article>
   );
@@ -38,9 +37,9 @@ const ActivityCard = React.memo(function ActivityCard({ title, imgId , img , img
 
 ActivityCard.propTypes = {
   title: PropTypes.string.isRequired,
-  img: PropTypes.string,      // real image import
-  imgAlt: PropTypes.string,   // alt text
-  imgId: PropTypes.string,    // fallback placeholder id
+  img: PropTypes.string,
+  imgAlt: PropTypes.string,
+  imgId: PropTypes.string,
 };
 
 export default ActivityCard;
