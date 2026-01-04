@@ -76,7 +76,6 @@
   animation: infinitePulseGlow 2s infinite;
 }
 
-/* Make the glow more subtle on mobile */
 @media (max-width: 640px) {
   .infinite-pulse-glow {
     animation: infinitePulseGlow 2.5s infinite;
