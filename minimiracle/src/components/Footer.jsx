@@ -3,8 +3,19 @@ import React from "react";
 // Or replace these with simple emoji or SVG placeholders
 import { Mail, Phone, MapPin } from "lucide-react";
 import { socialLinks } from "../mock/mockdata";
+import { NavLink } from "react-router-dom";
+
+
+
 
 const Footer = () => {
+  const quickLinks = [
+  { label: "About Us", to: "/about" },
+  { label: "Our Staff", to: "/staff" },
+  { label: "Programs", to: "/gallery" },
+  { label: "Home", to: "/" },
+];
+
   return (
     <footer className="relative bg-purple-900 text-white mt-20 pt-12 pb-6 overflow-hidden">
      
@@ -54,19 +65,19 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3 text-purple-100">
-              {["About Us", "Our Staff", "Programs", "Events", "Contact"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="hover:text-pink-400 transition-colors flex items-center gap-2 group"
-                    >
-                      <span className="w-2 h-2 bg-green-400 rounded-full group-hover:scale-150 transition-transform"></span>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {quickLinks.map((items) => (
+                <li key={items.label}>
+                  <NavLink
+                    to={items.to}
+                     end={items.to === "/"}   // VERY IMPORTANT for Home
+                     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    className="hover:text-pink-400 transition-colors flex items-center gap-2 group"
+                  >
+                    <span className="w-2 h-2 bg-green-400 rounded-full group-hover:scale-150 transition-transform"></span>
+                    {items.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -127,14 +138,6 @@ const Footer = () => {
             © {new Date().getFullYear()} Mini Miracle Pre-School. All Rights
             Reserved.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-2 text-xs">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>
