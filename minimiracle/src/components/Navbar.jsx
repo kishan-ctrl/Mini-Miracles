@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+   const linkClass = ({ isActive }) =>
+    `text-white hover:text-[#F9D823] transition ${isActive ? "text-[#F9D823]" : ""}`;
 
   return (
     <nav className="bg-[#800383] px-4 sm:px-6 lg:px-8 py-4">
@@ -16,11 +20,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation - Hidden on mobile */}
-        <ul className="hidden md:flex gap-6 lg:gap-8 items-center">
-          <li><a href="/" className="text-white hover:text-[#F9D823] transition">Home</a></li>
-          <li><a href="/gallery" className="text-white hover:text-[#F9D823] transition">Photo Gallery</a></li>
-          <li><a href="/staff" className="text-white hover:text-[#F9D823] transition">Staff</a></li>
-          <li><a href="/about" className="text-white hover:text-[#F9D823] transition">About Us</a></li>
+       <ul className="hidden md:flex gap-6 lg:gap-8 items-center">
+          <li><NavLink to="/" className={linkClass}>Home</NavLink></li>
+          <li><NavLink to="/gallery" className={linkClass}>Photo Gallery</NavLink></li>
+          <li><NavLink to="/staff" className={linkClass}>Staff</NavLink></li>
+          <li><NavLink to="/about" className={linkClass}>About Us</NavLink></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -48,34 +52,34 @@ const Navbar = () => {
       
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-4 pt-2 pb-4 space-y-3">
-          <a
-            href="/"
+          <NavLink
+            to="/"
             className="block text-white hover:text-[#F9D823] transition py-2 border-b border-white/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
-          </a>
-          <a
-            href="/gallery"
+          </NavLink>
+          <NavLink
+            to="/gallery"
             className="block text-white hover:text-[#F9D823] transition py-2 border-b border-white/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Photo Gallery
-          </a>
-          <a
-            href="/staff"
+          </NavLink>
+          <NavLink
+            to="/staff"
             className="block text-white hover:text-[#F9D823] transition py-2 border-b border-white/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Staff
-          </a>
-          <a
-            href="/about"
+          </NavLink>
+          <NavLink
+            to="/about"
             className="block text-white hover:text-[#F9D823] transition py-2"
             onClick={() => setIsMenuOpen(false)}
           >
             About Us
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>
