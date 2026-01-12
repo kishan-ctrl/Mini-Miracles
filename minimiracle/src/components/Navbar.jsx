@@ -49,7 +49,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      
+      {/* Mobile Navigation Menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-4 pt-2 pb-4 space-y-3">
           <NavLink

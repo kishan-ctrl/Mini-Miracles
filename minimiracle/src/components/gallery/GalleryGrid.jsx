@@ -6,9 +6,11 @@ export default function GalleryGrid({ items, onOpen, category, isLoading }) {
   // Skeleton loading
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
         {Array.from({ length: 10 }).map((_, i) => (
-          <div key={i} className="aspect-[4/3] rounded-2xl bg-slate-200 animate-pulse" />
+          <div key={i} className="mb-4 break-inside-avoid">
+            <div className="w-full aspect-[4/3] rounded-2xl bg-slate-200 animate-pulse" />
+          </div>
         ))}
       </div>
     );
@@ -16,9 +18,9 @@ export default function GalleryGrid({ items, onOpen, category, isLoading }) {
 
   return (
     <section aria-label="Photo gallery grid">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
         {items.map((item, idx) => (
-          <div key={item.id} className="h-fit">
+          <div key={item.id} className="mb-4 break-inside-avoid">
             <GalleryItem item={item} onOpen={() => onOpen(idx)} category={category} />
           </div>
         ))}

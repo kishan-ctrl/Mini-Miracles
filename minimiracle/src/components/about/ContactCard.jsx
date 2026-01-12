@@ -1,11 +1,10 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import LocationCard from "./LocationCard"; // Adjust import path
 
 const ContactCard = ({ contact }) => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-gra-50">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -18,30 +17,28 @@ const ContactCard = ({ contact }) => {
 
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Info */}
-         <div className="rounded-3xl bg-purple-50 p-4 ring-1 ring-purple-500 shadow-sm transition hover:bg-purple-100">
-
-
-            <InfoRow 
-              Icon={Phone} 
-              text={contact.phone} 
-              href={`tel:${contact.phone.replace(/\s+/g, "")}`} 
-            />
-            <InfoRow 
-              Icon={Mail} 
-              text={contact.email} 
-              href={`mailto:${contact.email}`} 
-            />
-            <InfoRow 
-              Icon={MapPin} 
-              text={contact.addressLine1} 
-            />
+          <div className="rounded-3xl bg-white p-6 ring-1 ring-gray-100 shadow-sm">
+            <InfoRow Icon={Phone} text={contact.phone} href={`tel:${contact.phone.replace(/\s+/g, "")}`} />
+            <InfoRow Icon={Mail} text={contact.email} href={`mailto:${contact.email}`} />
+            <InfoRow Icon={MapPin} text={contact.addressLine1} />
             <p className="ml-12 -mt-2 text-sm text-gray-600">{contact.addressLine2}</p>
-            
-           
           </div>
 
-          {/* Location Card */}
-          <LocationCard contact={contact} />
+          {/* Map placeholder */}
+          <div className="overflow-hidden rounded-3xl bg-white ring-1 ring-gray-100 shadow-sm">
+            <div className="flex items-center justify-between px-6 py-4">
+              <p className="text-sm font-semibold text-gray-800">Map</p>
+            </div>
+            <div className="h-60 w-full">
+  <img
+    src={contact.mapImage}
+    alt="School location map"
+    className="h-full w-full object-cover"
+    loading="lazy"
+  />
+</div>
+
+          </div>
         </div>
       </div>
     </section>
