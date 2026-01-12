@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import GalleryItem from "./GalleryItem";
 
 export default function GalleryGrid({ items, onOpen, category, isLoading }) {
-  // Skeleton loading
+  
   if (isLoading) {
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
