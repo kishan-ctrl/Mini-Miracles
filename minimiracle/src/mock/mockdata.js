@@ -274,12 +274,21 @@ export const aboutPage = {
   },
 
   director: {
+feature/hariv1
     title: "Principal's Message",
     name: "Mrs. Anusha Perera",
     role: "Principal / Director",
     message:
       "Welcome to our school family. We believe every child is unique and deserves a warm, supportive place to learn and grow. Our teachers focus on confidence, creativity, and character — not only grades. Thank you for trusting us with your child's journey.",
     image: principal,
+
+    title: "Principal’s Message",
+    name: "Mrs.Nishaanthe Nadarajah",
+    role: "Principal / Director B.Ed in early childhood education /M.Ed reading/MSW reading Dip in counselling and psychology / Grand master practitioner NLP",
+    message:
+      "Every child deserves a safe, respectful, and happy childhood.Learning begins with love, care, and curiosity.We grow together—children, parents, and educators.",
+    image: principal, 
+main
   },
 
   programs: {
@@ -356,6 +365,7 @@ export const aboutPage = {
 
 // Staff Section - use direct paths from public folder
 import staff from "../../public/images/staff.jpg"
+import madhushi from "../../public/images/madhushi.png"
 
 export const staffPage = {
   hero: {
@@ -397,7 +407,11 @@ export const staffPage = {
     },
     {
       id: 3,
+feature/hariv1
       name: "Miss.P.Rubika",
+
+      name: "K.Nishanthakumary"
+      main
       role: "Assistant Teacher",
       category: "Teachers",
       image: "/images/staff/teacher1.png", // Direct path from public folder
@@ -408,8 +422,13 @@ export const staffPage = {
     },
     {
       id: 4,
+ feature/hariv1
       name: "Miss.Madushi Hanshika",
       role: "Trainee Teacher",
+
+      name: "P.Rubika",
+      role: "Assistant Teacher",
+main
       category: "Teachers",
       image: "/images/staff/teacher2.png", // Direct path from public folder
       bio:
@@ -419,7 +438,11 @@ export const staffPage = {
     },
     {
       id: 5,
+feature/hariv1
       name: "Miss R.Sannika",
+
+      name: "R.Sannika",
+main
       role: "Assistant Teacher",
       category: "Teachers",
       image: "/images/staff/teacher3.png", // Direct path from public folder
@@ -428,6 +451,31 @@ export const staffPage = {
       highlights: ["Arts & craft", "Music", "Creative thinking"],
       contact: { email: "maya@demo.com", phone: "144 4444 5555" },
     },
+ feature/hariv1
     
+
+    {
+      id: 6,
+      name: "Mr. Sanjaya",
+      role: "School Coordinator",
+      category: "Support Staff",
+      image: principal,
+      bio:
+        "Helps with daily school operations and supports parents and students.",
+      highlights: ["Operations", "Events", "Communication"],
+      contact: { email: "coord@demo.com", phone: "144 5555 6666" },
+    },
+    {
+      id: 7,
+      name: "Madhushi Hanshika",
+      role: "Trainee Teacher",
+      category: "Teachers",
+      image: madhushi,
+      bio:
+        "Encourages imagination through drawing, craft, music, and performance.",
+      highlights: ["Arts & craft", "Music", "Creative thinking"],
+      contact: { email: "maya@demo.com", phone: "144 4444 5555" },
+    },
+main
   ],
 };

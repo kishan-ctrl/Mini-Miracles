@@ -28,6 +28,7 @@ const StaffProfileModal = ({ open, member, onClose }) => {
         aria-modal="true"
         aria-label="Staff profile"
       >
+feature/hariv1
         <div className="grid grid-cols-1 md:grid-cols-3">
           {/* Left column: Portrait image with info overlay */}
           <div className="relative md:col-span-1">
@@ -38,6 +39,17 @@ const StaffProfileModal = ({ open, member, onClose }) => {
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="relative h-100">
+          <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+          <button
+            onClick={onClose}
+            className="absolute right-4 top-4 rounded-xl bg-white/90 p-2 hover:bg-white transition"
+            aria-label="Close modal"
+          >
+            <X className="h-5 w-5" aria-hidden="true" />
+          </button>
+main
 
               {/* Close button */}
               <button

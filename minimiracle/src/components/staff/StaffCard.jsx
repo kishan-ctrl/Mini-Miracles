@@ -11,6 +11,7 @@ const StaffCard = ({ member, onOpen }) => {
       transition={{ duration: 0.45 }}
       className="group overflow-hidden rounded-3xl bg-white ring-1 ring-gray-100 shadow-sm hover:-translate-y-1 hover:shadow-md transition"
     >
+ feature/hariv1
       {/* Portrait image container with fixed aspect ratio */}
       <div className="relative pt-[125%]"> {/* 4:5 aspect ratio for portraits */}
         <div className="absolute inset-0 overflow-hidden bg-gray-100">
@@ -27,7 +28,18 @@ const StaffCard = ({ member, onOpen }) => {
         {/* Name and role positioned over the image */}
         <div className="absolute bottom-4 left-4 right-4">
           <p className="text-white text-lg font-extrabold drop-shadow-md">{member.name}</p>
-          <p className="text-white/90 text-sm drop-shadow-md">{member.role}</p>
+          <p className="text-white/90 text-sm drop-shadow-md">{member.role}
+      <div className="relative">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          loading="lazy"
+        />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute bottom-3 left-3 right-3">
+          <p className="text-white text-sm font-extrabold">{member.name}</p>
+          <p className="text-white/85 text-xs">{member.role}</ main
         </div>
       </div>
 

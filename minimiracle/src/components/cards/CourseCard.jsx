@@ -34,16 +34,7 @@ const CourseCard = React.memo(function CourseCard({ title, desc, imgId,imgAlt,im
         </h3>
         <p className="mt-1 text-sm text-slate-600 leading-relaxed">{desc}</p>
 
-        <button
-          type="button"
-          className="mt-4 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold
-                     bg-slate-900 text-white hover:bg-slate-800
-                     focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:ring-offset-2
-                     hover:cursor-pointer transition"
-          aria-label={`View details for ${title}`}
-        >
-          View Details
-        </button>
+        
       </div>
     </article>
   );
