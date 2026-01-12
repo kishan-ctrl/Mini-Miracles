@@ -1,4 +1,3 @@
-// src/mockdata/mockdata.js
 import kidsActivity from "../../public/images/kidsActivity.jpg"
 import elementary from "../../public/images/elementary.jpg"
 import middle from "../../public/images/middle.jpg"
@@ -18,7 +17,6 @@ export const pageContent = {
     ctaPrimary: "Enroll Now",
   },
 
-  // Three text blocks for the announcement section
   announcement: [
     "Appropriately engage diverse resources for next-generation systems.",
     "Professionally foster extensive paradigms via multidisciplinary systems.",
@@ -38,7 +36,7 @@ export const pageContent = {
     },
     {
       title: "Complete Tracking",
-      desc: "Progress tracking and updates to support every child’s learning journey.",
+      desc: "Progress tracking and updates to support every child's learning journey.",
       icon: "📍",
     },
     {
@@ -54,25 +52,24 @@ export const pageContent = {
       desc: "Creative play, music, art, and group activities for growth.",
       img: kidsActivity,
       imgAlt: "Kids participating in creative activity clubs",
-      
     },
     {
       title: "Elementary School",
       desc: "Strong foundation learning with caring guidance and fun lessons.",
       img: elementary,
-      imgAlt:"elementary school"
+      imgAlt: "elementary school"
     },
     {
       title: "Middle (10-10) Years",
       desc: "Skill building, teamwork, and confidence development.",
       img: middle,
-      imgAlt:"Kid staring to learn"
+      imgAlt: "Kid staring to learn"
     },
     {
       title: "Martial",
       desc: "Discipline, fitness, and balance through beginner-friendly training.",
       img: martial,
-      imgAlt: "learn Dicipline activity"
+      imgAlt: "learn Discipline activity"
     },
   ],
 
@@ -86,9 +83,9 @@ export const pageContent = {
       "Fun-based learning to build confidence and good habits.",
     ],
     cards: [
-      { title: "Outdoor Games", img: outdoor,imgAlt: "Kids playing outdoor games in a safe playground", },
-      { title: "Sport Activities", img: sport, imgAlt: "Phychical Activity" },
-      { title: "Table/Floor Toys", img: table, imgAlt:"floor Activity" },
+      { title: "Outdoor Games", img: outdoor, imgAlt: "Kids playing outdoor games in a safe playground" },
+      { title: "Sport Activities", img: sport, imgAlt: "Physical Activity" },
+      { title: "Table/Floor Toys", img: table, imgAlt: "floor Activity" },
       { title: "Traditional Activities", img: traditional, imgAlt: "cultural events" },
     ],
     viewAll: "View All",
@@ -100,36 +97,34 @@ export const pageContent = {
   },
 };
 
-// src/mockdata/galleryMockdata.js
-
 export const galleryContent = {
   categories: ["Baby/Bay", "Activities", "Painting", "Baby sitting"],
 
   photos: {
     "Baby/Bay": [
-      { id: 1, alt: "Baby smiling in classroom", aspect: "portrait", imageId: "baby-1" },
-      { id: 2, alt: "Kids playing with toys", aspect: "landscape", imageId: "baby-2" },
-      { id: 3, alt: "Child learning with blocks", aspect: "square", imageId: "baby-3" },
-      { id: 4, alt: "Kids reading picture book", aspect: "landscape", imageId: "baby-4" },
-      { id: 5, alt: "Happy child in activity corner", aspect: "portrait", imageId: "baby-5" },
+      { id: 1, alt: "Baby smiling in classroom", aspect: "portrait", imagePath: "/images/gallery/baby-1.jpeg" },
+      { id: 2, alt: "Kids playing with toys", aspect: "landscape", imagePath: "/images/gallery/baby-2.jpeg" },
+      { id: 3, alt: "Child learning with blocks", aspect: "square", imagePath: "/images/gallery/baby-3.jpeg" },
+      { id: 4, alt: "Kids reading picture book", aspect: "landscape", imagePath: "/images/gallery/baby-4.jpeg" },
+      
     ],
-    Activities: [
-      { id: 6, alt: "Outdoor play session", aspect: "landscape", imageId: "act-1" },
-      { id: 7, alt: "Group activity in classroom", aspect: "portrait", imageId: "act-2" },
-      { id: 8, alt: "Kids running game", aspect: "square", imageId: "act-3" },
-      { id: 9, alt: "Team building activity", aspect: "landscape", imageId: "act-4" },
+    "Activities": [
+      { id: 6, alt: "Outdoor play session", aspect: "landscape", imagePath: "/images/gallery/activity-1.jpeg" },
+      { id: 7, alt: "Group activity in classroom", aspect: "portrait", imagePath: "/images/gallery/activity-2.jpeg" },
+      { id: 8, alt: "Kids running game", aspect: "square", imagePath: "/images/gallery/activity-3.jpeg" },
+      { id: 9, alt: "Team building activity", aspect: "landscape", imagePath: "/images/gallery/activity-4.jpeg" },
     ],
-    Painting: [
-      { id: 10, alt: "Child painting with brush", aspect: "portrait", imageId: "paint-1" },
-      { id: 11, alt: "Art class painting session", aspect: "landscape", imageId: "paint-2" },
-      { id: 12, alt: "Kids showing artwork", aspect: "square", imageId: "paint-3" },
-      { id: 13, alt: "Color mixing activity", aspect: "landscape", imageId: "paint-4" },
+    "Painting": [
+      { id: 10, alt: "Child painting with brush", aspect: "portrait", imagePath: "/images/gallery/painting-1.jpeg" },
+      { id: 11, alt: "Art class painting session", aspect: "landscape", imagePath: "/images/gallery/painting-2.jpeg" },
+      { id: 12, alt: "Kids showing artwork", aspect: "square", imagePath: "/images/gallery/painting-3.jpeg" },
+      { id: 13, alt: "Color mixing activity", aspect: "landscape", imagePath: "/images/gallery/painting-4.jpeg" },
     ],
     "Baby sitting": [
-      { id: 14, alt: "Teacher guiding toddler", aspect: "portrait", imageId: "sit-1" },
-      { id: 15, alt: "Safe play supervision", aspect: "landscape", imageId: "sit-2" },
-      { id: 16, alt: "Care time activity", aspect: "square", imageId: "sit-3" },
-      { id: 17, alt: "Kids resting in cozy corner", aspect: "landscape", imageId: "sit-4" },
+      { id: 14, alt: "Teacher guiding toddler", aspect: "portrait", imagePath: "/images/gallery/babysitting-1.jpeg" },
+      { id: 15, alt: "Safe play supervision", aspect: "landscape", imagePath: "/images/gallery/babysitting-2.jpeg" },
+      { id: 16, alt: "Care time activity", aspect: "square", imagePath: "/images/gallery/babysitting-3.jpeg" },
+      { id: 17, alt: "Kids resting in cozy corner", aspect: "landscape", imagePath: "/images/gallery/babysitting-4.jpeg" },
     ],
   },
 
@@ -160,9 +155,35 @@ export const galleryContent = {
   statistics: {
     parentsCount: 66,
   },
+
+  testimonials: [
+    {
+      id: 1,
+      date: "SATURDAY",
+      text: "The academy helped my child become more confident and active. The teachers are kind and supportive.",
+      author: "John Corda",
+      role: "Parent",
+    },
+    {
+      id: 2,
+      date: "SATURDAY",
+      text: "Very clean environment and well-organized activities. My child enjoys going every day.",
+      author: "Nimali Perera",
+      role: "Parent",
+    },
+    {
+      id: 3,
+      date: "SATURDAY",
+      text: "Great balance of learning and fun. I love the progress updates and friendly staff.",
+      author: "Arun Kumar",
+      role: "Parent",
+    },
+  ],
+
+  statistics: {
+    parentsCount: 66,
+  },
 };
-
-
 
 export const aboutContent = {
   header: {
@@ -213,7 +234,6 @@ export const aboutContent = {
   },
 };
 
-
 export const socialLinks = [
   {
     name: "Facebook",
@@ -227,7 +247,6 @@ export const socialLinks = [
   },
 ];
 
-
 import About from "../../public/images/About.jpg"
 import principal from "../../public/images/principal.jpg"
 import schoolLife1 from "../../public/images/schoolLife1.jpg"
@@ -236,33 +255,31 @@ import schoolLife3 from "../../public/images/schoolLife3.jpg"
 import schoolLife4 from "../../public/images/schoolLife4.jpg"
 import map from "../../public/images/map.jpg"
 
-
 export const aboutPage = {
   hero: {
     title: "About Us",
     tagline: "Where little learners grow with joy, confidence, and care.",
     visionTitle: "Vision",
     visionText:
-      "Let us become the wings of childhood, nurturing talent,creativity,and values. Developing self-desipline, and creating a successful school year and bright future.Let's lead the society to victory... ",
+      "Let us become the wings of childhood, nurturing talent, creativity, and values. Developing self-discipline, and creating a successful school year and bright future. Let's lead the society to victory...",
     missionTitle: "Mission",
     missionText:
-      "The roots of childhood are the ladder to future with character creation. Develop motivation,promote talent,realize the need for education, and elevate sports.Let's find a way of life and conquer the future.",
+      "The roots of childhood are the ladder to future with character creation. Develop motivation, promote talent, realize the need for education, and elevate sports. Let's find a way of life and conquer the future.",
     stats: [
-  { label: "Happy Students", value: 200, suffix: "+" },
-  { label: "Programs", value: 25, suffix: "+" },
-  { label: "Teachers", value: 60, suffix: "+" },
-],
-
-    heroImage: About, // replace with your image
+      { label: "Happy Students", value: 200, suffix: "+" },
+      { label: "Programs", value: 25, suffix: "+" },
+      { label: "Teachers", value: 60, suffix: "+" },
+    ],
+    heroImage: About,
   },
 
   director: {
-    title: "Principal’s Message",
+    title: "Principal's Message",
     name: "Mrs. Anusha Perera",
     role: "Principal / Director",
     message:
-      "Welcome to our school family. We believe every child is unique and deserves a warm, supportive place to learn and grow. Our teachers focus on confidence, creativity, and character — not only grades. Thank you for trusting us with your child’s journey.",
-    image: principal, 
+      "Welcome to our school family. We believe every child is unique and deserves a warm, supportive place to learn and grow. Our teachers focus on confidence, creativity, and character — not only grades. Thank you for trusting us with your child's journey.",
+    image: principal,
   },
 
   programs: {
@@ -330,16 +347,14 @@ export const aboutPage = {
   contact: {
     title: "Contact Information",
     phone: "144 0055 9175",
-    email: "drenomil@demo.com",
-    addressLine1: "16 Glazelord Street Glasgow",
-    addressLine2: "G1 UU, New York, USA",
+    email: "nishaanthenadarajah@gmail.com",
+    addressLine1: "No: 20 Pansala Road. Hatton, Sri Lanka",
+   
     mapImage: map,
   },
 };
 
-
-//staff Section 
-
+// Staff Section - use direct paths from public folder
 import staff from "../../public/images/staff.jpg"
 
 export const staffPage = {
@@ -347,7 +362,7 @@ export const staffPage = {
     title: "Our Staff",
     subtitle:
       "Meet our caring team of educators and mentors who guide children with love, learning, and confidence.",
-    bannerImage: staff, // placeholder background image
+    bannerImage: staff,
     stats: [
       { label: "Teachers", value: 60, suffix: "+" },
       { label: "Experience", value: 12, suffix: "+ years" },
@@ -355,48 +370,48 @@ export const staffPage = {
     ],
   },
 
-  categories: ["All", "Management", "Teachers", "Support Staff"],
+  categories: ["All", "Teachers", "Support Staff"],
 
   staff: [
     {
       id: 1,
-      name: "Mrs. Anusha Perera",
-      role: "Principal / Director",
-      category: "Management",
-      image: principal,
+      name: "Miss.Nishaanthe Nadarajah ",
+      role: "Founder and head teacher",
+      category: "Teachers",
+      image: "/images/staff/principal.png", // Direct path from public folder
       bio:
-        "Leads our school with a strong focus on child-centered learning, character building, and a safe environment.",
+        "Dip In Early Childhood Education NVQ4",
       highlights: ["Leadership", "Student wellbeing", "Parent communication"],
       contact: { email: "principal@demo.com", phone: "144 0055 9175" },
     },
     {
       id: 2,
       name: "Mr. Kevin Silva",
-      role: "Vice Principal",
-      category: "Management",
-      image: principal,
+      role: " Assistant Teacher",
+      category: "Teachers",
+      image: "/images/staff/vice-principal.png", // Direct path from public folder
       bio:
-        "Supports academic planning and ensures every classroom is engaging and student-friendly.",
+        "Dip In Early Childhood Education NVQ4",
       highlights: ["Academic planning", "Teacher support", "Discipline & values"],
       contact: { email: "kevin@demo.com", phone: "144 1111 2222" },
     },
     {
       id: 3,
-      name: "Ms. Nisha Fernando",
-      role: "Grade 1 Class Teacher",
+      name: "Miss.P.Rubika",
+      role: "Assistant Teacher",
       category: "Teachers",
-      image: principal,
+      image: "/images/staff/teacher1.png", // Direct path from public folder
       bio:
-        "Creates joyful learning experiences with stories, activities, and gentle guidance.",
+        "Dip In Early Childhood Education NVQ4",
       highlights: ["Early literacy", "Creative learning", "Classroom care"],
       contact: { email: "nisha@demo.com", phone: "144 2222 3333" },
     },
     {
       id: 4,
-      name: "Mr. Arjun Kumar",
-      role: "Sports & Movement Coach",
+      name: "Miss.Madushi Hanshika",
+      role: "Trainee Teacher",
       category: "Teachers",
-      image: principal,
+      image: "/images/staff/teacher2.png", // Direct path from public folder
       bio:
         "Builds teamwork and confidence through fun games and basic athletics.",
       highlights: ["Teamwork", "Motor skills", "Healthy habits"],
@@ -404,27 +419,15 @@ export const staffPage = {
     },
     {
       id: 5,
-      name: "Ms. Maya Perera",
-      role: "Art & Creativity Teacher",
+      name: "Miss R.Sannika",
+      role: "Assistant Teacher",
       category: "Teachers",
-      image: principal,
+      image: "/images/staff/teacher3.png", // Direct path from public folder
       bio:
         "Encourages imagination through drawing, craft, music, and performance.",
       highlights: ["Arts & craft", "Music", "Creative thinking"],
       contact: { email: "maya@demo.com", phone: "144 4444 5555" },
     },
-    {
-      id: 6,
-      name: "Mr. Sanjaya",
-      role: "School Coordinator",
-      category: "Support Staff",
-      image: principal,
-      bio:
-        "Helps with daily school operations and supports parents and students.",
-      highlights: ["Operations", "Events", "Communication"],
-      contact: { email: "coord@demo.com", phone: "144 5555 6666" },
-    },
+    
   ],
 };
-
-
