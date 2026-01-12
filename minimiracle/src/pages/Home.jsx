@@ -63,16 +63,6 @@ const Home = () => {
                 >
                   {pageContent.hero.ctaPrimary}
                 </button>
-
-                <button
-                  type="button"
-                  className="rounded-full bg-white/15 border border-white/25 px-6 py-3 font-semibold
-                             hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-purple-700
-                             hover:cursor-pointer transition"
-                  aria-label="View admission details"
-                >
-                  View Details
-                </button>
               </div>
             </div>
 
@@ -157,16 +147,7 @@ const Home = () => {
                 Featured Courses
               </h2>
 
-              <button
-                type="button"
-                onClick={() => handleViewAll("courses")}
-                className="rounded-full bg-white text-indigo-700 font-bold px-5 py-2
-                           hover:bg-indigo-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-700
-                           hover:cursor-pointer transition"
-                aria-label="View all courses"
-              >
-                View All
-              </button>
+              
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -219,16 +200,7 @@ const Home = () => {
               ))}
             </ul>
 
-            <button
-              type="button"
-              onClick={() => handleViewAll("activities")}
-              className="rounded-full bg-indigo-600 text-white font-bold px-6 py-3
-                         hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
-                         hover:cursor-pointer transition"
-              aria-label="View all activities"
-            >
-              {pageContent.activities.viewAll}
-            </button>
+           
           </div>
 
           {/* Right cards */}

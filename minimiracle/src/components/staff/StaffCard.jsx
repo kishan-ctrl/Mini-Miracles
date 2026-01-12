@@ -15,7 +15,7 @@ const StaffCard = ({ member, onOpen }) => {
         <img
           src={member.image}
           alt={member.name}
-          className="h-52 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          className="w-full object-cover transition duration-500 group-hover:scale-[1.03]"
           loading="lazy"
         />
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/60 to-transparent" />

@@ -28,7 +28,7 @@ const StaffProfileModal = ({ open, member, onClose }) => {
         aria-modal="true"
         aria-label="Staff profile"
       >
-        <div className="relative h-52">
+        <div className="relative h-100">
           <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
           <button

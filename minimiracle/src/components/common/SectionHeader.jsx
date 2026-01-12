@@ -19,19 +19,6 @@ const SectionHeader = React.memo(function SectionHeader({
       <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900">
         {title}
       </h2>
-
-      {actionLabel ? (
-        <button
-          type="button"
-          onClick={onAction}
-          className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold bg-indigo-600 text-white
-                     hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
-                     transition"
-          aria-label={actionLabel}
-        >
-          {actionLabel}
-        </button>
-      ) : null}
     </header>
   );
 });

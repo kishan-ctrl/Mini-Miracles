@@ -258,10 +258,10 @@ export const aboutPage = {
 
   director: {
     title: "Principal’s Message",
-    name: "Mrs. Anusha Perera",
-    role: "Principal / Director",
+    name: "Mrs.Nishaanthe Nadarajah",
+    role: "Principal / Director B.Ed in early childhood education /M.Ed reading/MSW reading Dip in counselling and psychology / Grand master practitioner NLP",
     message:
-      "Welcome to our school family. We believe every child is unique and deserves a warm, supportive place to learn and grow. Our teachers focus on confidence, creativity, and character — not only grades. Thank you for trusting us with your child’s journey.",
+      "Every child deserves a safe, respectful, and happy childhood.Learning begins with love, care, and curiosity.We grow together—children, parents, and educators.",
     image: principal, 
   },
 
@@ -341,6 +341,7 @@ export const aboutPage = {
 //staff Section 
 
 import staff from "../../public/images/staff.jpg"
+import madhushi from "../../public/images/madhushi.png"
 
 export const staffPage = {
   hero: {
@@ -382,8 +383,8 @@ export const staffPage = {
     },
     {
       id: 3,
-      name: "Ms. Nisha Fernando",
-      role: "Grade 1 Class Teacher",
+      name: "K.Nishanthakumary",
+      role: "Assistant Teacher",
       category: "Teachers",
       image: principal,
       bio:
@@ -393,8 +394,8 @@ export const staffPage = {
     },
     {
       id: 4,
-      name: "Mr. Arjun Kumar",
-      role: "Sports & Movement Coach",
+      name: "P.Rubika",
+      role: "Assistant Teacher",
       category: "Teachers",
       image: principal,
       bio:
@@ -404,8 +405,8 @@ export const staffPage = {
     },
     {
       id: 5,
-      name: "Ms. Maya Perera",
-      role: "Art & Creativity Teacher",
+      name: "R.Sannika",
+      role: "Assistant Teacher",
       category: "Teachers",
       image: principal,
       bio:
@@ -423,6 +424,17 @@ export const staffPage = {
         "Helps with daily school operations and supports parents and students.",
       highlights: ["Operations", "Events", "Communication"],
       contact: { email: "coord@demo.com", phone: "144 5555 6666" },
+    },
+    {
+      id: 7,
+      name: "Madhushi Hanshika",
+      role: "Trainee Teacher",
+      category: "Teachers",
+      image: madhushi,
+      bio:
+        "Encourages imagination through drawing, craft, music, and performance.",
+      highlights: ["Arts & craft", "Music", "Creative thinking"],
+      contact: { email: "maya@demo.com", phone: "144 4444 5555" },
     },
   ],
 };
